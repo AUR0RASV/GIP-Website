@@ -102,6 +102,9 @@ Hero section
   .hero {
     text-align: start;
   }
+  .hero__video {
+    size: 90%;
+  }
 }
 
 .hero__video {
