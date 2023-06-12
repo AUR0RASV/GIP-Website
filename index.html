@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oni Energy</title>
+    <!--Bootstrap Stylesheet-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!--Lightbox Stylesheet-->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!--Header Start-->
+    <header class="header p-3 position-fixed start-0 top-0 end-0">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="/" class="text-decoration-none text-white fs-5 fw-bold"
+          >Oni Energy</a
+        >
+
+        <div>
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-Label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!--Header end-->
+
+    <!--Flyout Navigation start-->
+    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+      <div class="dropdown-nav__container container-xxl d-flex align-items-start align-items-md-center">
+        <div class="row align-items-start">
+          <div class="col-12 col-sm-4 mt-4">
+            <a href="#about" class="row text-decoration-none" onclick="closeNavbar()">
+              <div class="col-2 col-sm-12 mb-4">
+                <img
+                  src="img/flavours temp.jpg"
+                  alt="About"
+                  class="img-fluid"
+                  width="553"
+                  height="746"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="col-10">
+                <h3>About</h3>
+                <p>Find out more about our Flavours</p>
+                <p>Learn more <i class="bi bi-arrow-right-short"></i></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-4 mt-4">
+            <a href="#portfolio" class="row text-decoration-none" onclick="closeNavbar()">
+              <div class="col-2 col-sm-12 mb-4">
+                <img
+                  src="img/flavours temp.jpg"
+                  alt="Flavours"
+                  class="img-fluid"
+                  width="553"
+                  height="746"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="col-10">
+                <h3>Portfolio</h3>
+                <p>Find out about our works</p>
+                <p>Learn more <i class="bi bi-arrow-right-short"></i></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-4 mt-4">
+            <a href="#contact" class="row text-decoration-none" onclick="closeNavbar()">
+              <div class="col-2 col-sm-12 mb-4">
+                <img
+                  src="img/flavours temp.jpg"
+                  alt="Flavours"
+                  class="img-fluid"
+                  width="553"
+                  height="746"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="col-10">
+                <h3>Contact</h3>
+                <p>Contact us</p>
+                <p><i class="bi bi-arrow-right-short"></i></p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler dropdown-nav__closeNavBtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-Label="Toggle navigation"
+          onclick="closeNavbar()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!--Flyout Navigation end-->
+
+    <!--Hero start-->
+    <section class="hero">
+      <div class="hero__overlay"></div>
+
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+        loading="lazy"
+        class="hero__video"
+      >
+        <source src="video/Background black.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero__content h-100 container-custom position-relative">
+        <div class="d-flex h-100 align-items-center hero__content-width">
+          $
+          <div class="text-white">
+            <h1 class="hero__heading fw-bold mb-4">
+              Discover The taste of Oni
+            </h1>
+            <p class="lead mb-4">
+              Discover your limits!
+            </p>
+            <a href="coming soon/soon.html" class="mt-2 btn btn-lg btn-outline-light" role="button"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <a href="#scroll-down" class="hero__scroll-btn">
+        Explore <i class="bi bi-arrow-down-short"></i>
+      </a>
+    </section>
+
+    <a id="scroll-down"></a>
+    <!--Hero end-->
+
+    <!--Section 1 start-->
+    <section class="about about--background" id="about">
+      <div class="container-custom">
+        <div class="row">
+          <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+            <img
+              src="img/flavours temp.jpg"
+              alt="about"
+              class="img-fluid pb-4 about__section-thumbnail"
+              width="553"
+              height="746"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="col-12 col-sm-6 align-self-center justify-content-md-center"
+          >
+            <div class="about__content-width">
+              <h1 class="h2 mb-4">About us</h1>
+              <p class="mb-4">
+                Welcome to Oni, where we create 100% natural energy drinks that
+                fuel your body and mind. Our beverages are carefully crafted
+                with the finest natural ingredients, ensuring a healthy and
+                refreshing experience. <br />
+                <br />
+
+                At Oni, we are dedicated to sustainability and actively support
+                recycling initiatives. Join us in our mission for a greener
+                future. Experience the natural power of Oni energy drinks and
+                embrace a balanced lifestyle. <br />
+                <br />
+
+                Cheers to vitality and sustainability with Oni! Together, let's
+                make a positive impact on our health and the environment. With
+                Oni, you can enjoy a natural energy boost without compromising
+                on taste or quality. <br />
+                <br />
+
+                Join our community and be part of the movement towards a
+                healthier and more sustainable world. Oni - where nature and
+                energy unite for your well-being.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section 1 end-->
+
+    <!--Section 2 start-->
+    <section class="portfolio" id="portfolio">
+      <div class="container--gallery">
+        <div class="gallery">
+          <a href="img/Gallery/1.jpg" data-lightbox="models" data-title="Caption1">
+            <img src="img/Gallery/1.jpg">
+          </a>
+          <a href="img/Gallery/2.jpg" data-lightbox="models" data-title="Caption2">
+            <img src="img/Gallery/2.jpg">
+          </a>
+          <a href="img/Gallery/3.jpg" data-lightbox="models" data-title="Caption3">
+            <img src="img/Gallery/3.jpg">
+          </a>
+          <a href="img/Gallery/4.jpg" data-lightbox="models" data-title="Caption4">
+            <img src="img/Gallery/4.jpg">
+          </a>
+          <a href="img/Gallery/5.jpg" data-lightbox="models" data-title="Caption5">
+            <img src="img/Gallery/5.jpg">
+          </a>
+          <a href="img/Gallery/6.jpg" data-lightbox="models" data-title="Caption6">
+            <img src="img/Gallery/6.jpg">
+          </a>
+          <a href="img/Gallery/7.jpg" data-lightbox="models" data-title="Caption7">
+            <img src="img/Gallery/7.jpg">
+          </a>
+          <a href="img/Gallery/8.jpg" data-lightbox="models" data-title="Caption8">
+            <img src="img/Gallery/8.jpg">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--Section 2 end-->
+
+    <!--Form start-->
+      <section class="contact" id="contact">
+        <div class="contact-form">
+          <h1>Contact <span>Us</span></h1>
+          <form action="">
+            <input type="" placeholder="Your Name" required>
+            <input type="email" name="email" id="" placeholder="E-mail" required>
+            <input type="" placeholder="Write a Subject" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+            <input type="submit" name="" value="submit" class="btn">
+          </form>
+        </div>
+
+        <div class="contact-img">
+          <img src="https://picsum.photos/720" alt="">
+        </div>
+      </section>
+    <!--Form end-->
+
+    <!--Footer start-->
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 item text">
+              <h3>Oni</h3>
+              <p>
+                Unleash your inner demons!
+              </p>
+            </div>
+            <div class="col item social">
+              <a href="https://www.instagram.com/oni.energy.official/"><i class="bi bi-instagram"></i></a
+              ><a href="https://www.youtube.com/@OniEnergyOfficial"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <p class="copyright">Oni Energy © 2023</p>
+        </div>
+      </footer>
+    </div>
+    <!--Footer end-->
+
+    <!--Local JS-->
+    <script src="js/script.js"></script>
+    <!--Jquery JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!--Lightbox JS-->
+    <script src="js/lightbox-plus-jquery.js"></script>
+  </body>
+</html>
