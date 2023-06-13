@@ -207,6 +207,10 @@ About section
 Gallery section
 */
 
+.portfolio--text{
+  text-align: center;
+}
+
 .container--gallery{
   width: 100%;
   min-height: 50vh;
@@ -228,6 +232,14 @@ Gallery section
 
 .data-title {
   color: white;
+}
+
+/*
+Movies section
+*/
+
+.movies img{
+  min-width: 500px;
 }
 
 /*
